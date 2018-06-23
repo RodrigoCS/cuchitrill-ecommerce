@@ -1,0 +1,60 @@
+<div>
+
+    <div class="row" style="text-align: center">
+
+
+        <div class="col-sm-6">
+            <%= __('Tipo de envio') %>
+        </div>
+
+
+        <div class="col-sm-6">
+
+            <Select class="form-control" name="shipping">
+                <Option value="PRE">
+                    <%= __('Prepago') %>
+                </option>
+                <Option value="POST">
+                    <%= __('Postpago') %>
+                </option>
+            </Select>
+        </div>
+
+
+    </div>
+</div>
+
+
+<hr>
+<div>
+
+
+    <div class="row" style="align-content: center;text-align: center">
+        <div class="col-sm-6">
+            <%= __('Metodo de pago') %>
+        </div>
+
+
+        <div class="col-sm-6">
+            <select id="payment" class="form-control" name="payment">
+
+
+                <option value="paypal">
+                    <%= __('Paypal') %>
+                </option>
+
+
+                <option value="credit_card">
+                    <%= __('Credit Card') %>
+                </option>
+                <option value="bank_transfer">
+                    <%= __('Bank Transfer') %>
+                </option>
+
+
+            </select>
+        </div>
+
+
+    </div>
+</div>

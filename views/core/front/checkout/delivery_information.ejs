@@ -1,0 +1,113 @@
+<div>
+    <h4 style="color:forestgreen;text-align: center; ">
+        <%= __('Información de envio') %>
+    </h4>
+
+    <div class="row" style="align-content: center;text-align: center">
+
+        <!--div class="col-sm-6">
+                                       <label > <%= __('Zip') %> </label>
+                                       <input type="text" class="form-control" id="postcode" name="postcode" placeholder="<%= __('Please enter your zip code') %>"
+                                              value="<% if (typeof user == 'object' && user) {     user.postcode    } %> " required>
+                    </div-->
+    </div>
+
+    <div class="row" style="align-content: center;text-align: center">
+
+        <div class="col-sm-6">
+            <Label>
+                <%= __('Dirección 1') %>
+            </label>
+
+            <Input type="text" class="form-control" id="delivery_address1" name="delivery_address1" placeholder="<%= __('Dirección 1') %>"
+                value="<% if (typeof user == 'object' && user) {  } %>">
+        </div>
+
+
+        <div class="col-sm-6">
+            <Label>
+                <%= __('Dirección 2') %>
+            </label>
+
+            <Input type="text" class="form-control" id="delivery_address2" name="delivery_address2" placeholder="<%= __('Dirección 2') %>"
+                value="<% if (typeof user == 'object' && user) { } %>">
+        </div>
+
+    </div>
+
+
+    <div class="row" style="align-content: center;text-align: center">
+
+        <div class="col-sm-6">
+            <Label>
+                <%= __('Ciudad') %>
+            </label>
+
+            <Input type="text" class="form-control" id="delivery_city" name="delivery_city" placeholder="<%= __('Ciudad') %>" value="<% if (typeof user == 'object' && user) {  } %>">
+        </div>
+
+
+        <div class="col-sm-6">
+            <Label>
+                <%= __('Pais') %>
+            </label>
+
+            <Input type="text" class="form-control" id="delivery_country" name="delivery_country" placeholder="<%= __('Pais') %>" value="<% if (typeof user == 'object' && user) { } %>">
+        </div>
+
+    </div>
+
+
+    <div class="row" style="align-content: center;text-align: center">
+
+        <div class="col-sm-6">
+            <Label>
+                <%= __('Provincia') %>
+            </label>
+
+            <Input type="text" class="form-control" id="delivery_province" name="delivery_province" placeholder="<%= __('Provincia') %>"
+                value="<% if (typeof user == 'object' && user) { } %>">
+        </div>
+
+        <div class="col-sm-6">
+            <Label>
+                <%= __('Codigo Postal') %>
+            </label>
+
+            <Input type="text" class="form-control" id="delivery_zip" name="delivery_zip" placeholder="<%= __('CP') %>" value="<% if (typeof user == 'object' && user) { } %>">
+        </div>
+
+
+    </div>
+
+    <div class="row" style="align-content: center;text-align: center">
+
+        <div class="col-sm-6">
+
+            <Label for="comment">
+                <%= __('Información de envio') %>
+            </label>
+
+            <Textarea class="form-control" name="delivery_note" id="delivery_note" cols="30" rows=1 placeholder="<%= __('Agregar informacion de envio') %> "> </textarea>
+        </div>
+
+        <div class="col-sm-6">
+
+
+            <%= __('Usar la misma dirección para facturación') %>
+
+                <div class="checkbox">
+
+
+                    <input type="checkbox" name="remember" checked>
+
+                </div>
+        </div>
+        </br>
+
+    </div>
+    <div>
+        Al hacer click en el boton de ordenar, automaticamente estas de acuerdo con nuetras
+        <a href="/help">políticas</a>.
+    </div>
+</div>
